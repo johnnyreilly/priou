@@ -1,10 +1,11 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
   <head>
-    <meta charset='utf-8'>
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet" type="text/css">
+    <link rel="Shortcut icon" href="favicon.ico">
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
@@ -13,45 +14,54 @@
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
-    <title>Priou by johnnyreilly</title>
+    <title>Priou: we build software</title>
   </head>
 
   <body>
     <header>
       <div class="inner">
-        <h1>Priou</h1>
-        <h2>All about Priou!</h2>
-        <a href="https://github.com/johnnyreilly/priou" class="button"><small>View project on</small> GitHub</a>
+        <h1><img alt="Priou"
+                 src="data:image/png;base64,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" /></h1>
+        <h2>we build software</h2>
       </div>
     </header>
 
     <div id="content-wrapper">
       <div class="inner clearfix">
         <section id="main-content">
-          <h3>
-<a id="welcome-to-priou" class="anchor" href="#welcome-to-priou" aria-hidden="true"><span class="octicon octicon-link"></span></a>Welcome to Priou.</h3>
+          <h3><a id="welcome-to-priou" class="anchor" href="#welcome-to-priou" aria-hidden="true"><span class="octicon octicon-link"></span></a>Welcome to Priou.</h3>
 
-<p>Hi! You're probably wondering what Priou does. Well, Priou builds software. Based in London, we have 15 years of experience building and maintaining systems in a variety of industries (with an emphasis on finance). We've been involved since early on in .Net. We love the web and always have. We're passionate about open source; we build it and we use it. If you need a system built, we may be able to help you!</p>
+          <p>Hi! You're probably wondering what Priou does. Well, Priou builds software. Based in London, we have 15 years of experience building and maintaining systems in a variety of industries (with an emphasis on finance). We've been involved since early on in .Net. We love the web and always have. We're passionate about open source; we build it and we use it. If you need a system built, we may be able to help you!</p>
 
-<h3>
-<a id="support-or-contact" class="anchor" href="#support-or-contact" aria-hidden="true"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
+          <h3><a id="technologies" class="anchor" href="#technologies" aria-hidden="true"><span class="octicon octicon-link"></span></a>Technologies.</h3>
 
-<p>You can reach us <a href="mailto:johnny_reilly@hotmail.com?subject=Priou">here</a>.</p>
+          <p>Priou believe in using technologies that makes our lives easier.  We combine that with excitement in the ever changing world of software.  Over time we've worked with more technologies than it makes sense to list.  So here's a selection of some of those that have been used more recently:</p>
+
+          <ul>
+            <li>C# / ASP.Net (MVC / Web API / WebForms)</li>
+            <li>SQL Server / Entity Framework</li>
+            <li>JavaScript / TypeScript (we're involved with the <a href="https://github.com/borisyankov/DefinitelyTyped">Definitely Typed</a> project)</li>
+            <li>Knockout / Angular</li>
+          </ul>
+
+          <h3><a id="support-or-contact" class="anchor" href="#support-or-contact" aria-hidden="true"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
+
+            <p>You can reach us <a href="mailto:johnny_reilly@hotmail.com?subject=Priou">here</a>.</p>
+
         </section>
 
         <aside id="sidebar">
-          <a href="https://github.com/johnnyreilly/priou/zipball/master" class="button">
+          <!--<a href="https://github.com/johnnyreilly/priou/zipball/master" class="button">
             <small>Download</small>
             .zip file
           </a>
           <a href="https://github.com/johnnyreilly/priou/tarball/master" class="button">
             <small>Download</small>
             .tar.gz file
-          </a>
+          </a>-->
 
-          <p class="repo-owner"><a href="https://github.com/johnnyreilly/priou"></a> is maintained by <a href="https://github.com/johnnyreilly">johnnyreilly</a>.</p>
-
-          <p>This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the Architect theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.</p>
+          <p>We <a href="http://blog.icanmakethiswork.io/">blog</a>.</p>
+          <p>We dig <a href="https://github.com/johnnyreilly">open source</a>.</p>
         </aside>
       </div>
     </div>
